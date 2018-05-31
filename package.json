@@ -5,10 +5,11 @@
   "author": "Rohit Yadav",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-cli": "6.26.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
@@ -27,5 +28,8 @@
     "validator": "^10.2.0",
     "webpack": "^4.10.2",
     "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^2.1.4"
   }
 }
